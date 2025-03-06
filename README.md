@@ -50,7 +50,7 @@ This project aims to uncover how students' music preferences and listening inten
 
   **Libraries:**
 
-    - pandas for data processing
+    - 'pandas' for data processing
 
     - matplotlib and seaborn for visualization
 
