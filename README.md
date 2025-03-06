@@ -44,7 +44,7 @@ This project aims to uncover how students' music preferences and listening inten
 - Investigate the relationship between listening habits and stress-related periods, such as the tendency to listen to instrumental vs. vocal tracks or upbeat vs. slow-tempo music.
 - Visualize all findings through charts and dashboards to effectively communicate the insights gained from the analysis.
 
-# Tools and Techniques
+## Tools and Techniques
 
   **Programming:** Python (Google Colab)
 
