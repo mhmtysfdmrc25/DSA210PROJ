@@ -22,7 +22,7 @@ This project aims to uncover how students' music preferences and listening inten
 
 # Data Sources
 
-  # Spotify Listening History:
+**Spotify Listening History:**  
 
 - Obtained via Spotify API.
 
@@ -30,7 +30,7 @@ This project aims to uncover how students' music preferences and listening inten
 
 - Requires OAuth authentication for user-specific streaming history.
 
-  # Exam Dates:
+**Exam Dates:**
 
 - Extracted from a Notion calendar using Notion API.
 
