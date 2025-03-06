@@ -46,9 +46,9 @@ This project aims to uncover how students' music preferences and listening inten
 
 # Tools and Techniques
 
-  # Programming: Python (Google Colab)
+  **Programming:** Python (Google Colab)
 
-  # Libraries:
+  **Libraries:**
 
     - pandas for data processing
 
@@ -58,7 +58,7 @@ This project aims to uncover how students' music preferences and listening inten
 
     - TextBlob or VADER for sentiment analysis of song lyrics
 
-  # Data Source Integration:
+  **Data Source Integration:**
 
     - Spotify API for streaming history
 
