@@ -50,13 +50,13 @@ This project aims to uncover how students' music preferences and listening inten
 
   **Libraries:**
 
-    - 'pandas' for data processing
+    - `pandas` for data processing
 
-    - matplotlib and seaborn for visualization
+    - `matplotlib` and `seaborn` for visualization
 
-    - spotipy for Spotify API integration
+    - `spotipy` for Spotify API integration
 
-    - TextBlob or VADER for sentiment analysis of song lyrics
+    - `TextBlob` or `VADER` for sentiment analysis of song lyrics
 
   **Data Source Integration:**
 
