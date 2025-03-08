@@ -1,47 +1,52 @@
-# Analysis of YouTube Viewing Habits During Exam Periods
+# Analysis of ChatGPT Usage During Project Work and Exam Periods
 
 ## Project Overview
 
-This project examines how students' YouTube viewing habits change during exam periods. Media consumption often reflects external factors such as academic deadlines, stress levels, and daily routines. By correlating YouTube watch history with exam dates sourced from a Notion calendar, this study aims to uncover how students' viewing patterns and content preferences adapt during these times.
+This project aims to analyze how my ChatGPT usage fluctuates during both project work periods and exam periods by correlating interaction data with timelines extracted from my Notion workspace. Effective project management and exam preparation often involve extensive research, brainstorming, and problem-solving, which can lead to increased reliance on AI tools like ChatGPT. By examining my ChatGPT usage before, during, and after these critical periods, this study seeks to uncover patterns in AI-assisted productivity and study habits.
 
-YouTube plays a crucial role in both education and entertainment, serving as a source of relaxation and academic support. During exam periods, students may exhibit unique viewing behaviors—either consuming more educational content for study purposes or watching entertainment videos as a form of stress relief. This project seeks to answer key questions such as:
+ChatGPT serves as a powerful tool for ideation, content creation, technical problem-solving, and exam revision. However, its usage may vary depending on project complexity, exam difficulty, deadlines, and personal work habits. This project will investigate key questions such as:
 
-- Does YouTube watch time increase or decrease during exam periods?
-- What types of videos are watched more frequently—educational, entertainment, or motivational content?
-- Do students tend to watch shorter or longer videos during stressful times?
-- Are there shifts in the emotional tone of the videos consumed?
+- Does my ChatGPT usage increase during active project work periods?
+- What types of questions or topics dominate my interactions with ChatGPT during project phases?
+- Does my ChatGPT usage increase during exam periods?
 
-By combining YouTube watch history with structured exam schedule data from Notion, this study aims to identify trends, patterns, and correlations in content consumption. The findings could provide insights into how stress and academic workload influence digital habits, potentially informing better time management strategies.
+By integrating ChatGPT interaction logs with structured project timelines and exam schedules from Notion, I aim to identify trends in how AI usage supports both academic and project workflows. The findings could provide valuable insights into AI-driven productivity patterns and highlight how external academic demands shape digital tool utilization.
 
-The project will employ data science techniques such as exploratory data analysis (EDA), sentiment analysis, and content categorization to process and visualize the data. Results will be presented in interactive charts and dashboards, highlighting the differences in viewing habits between exam and non-exam periods.
+The project will employ data science techniques such as exploratory data analysis (EDA), topic modeling, and temporal analysis to uncover trends and correlations. Results will be presented in interactive visualizations to illustrate usage fluctuations across different project and exam phases. Ultimately, this study seeks to enhance our understanding of AI-assisted study and work strategies, optimizing ChatGPT usage for more efficient learning and productivity.
 
 # Motivation
 
-Understanding the impact of external factors, such as exams, on media consumption can provide insights into time management, emotional states, and stress-coping mechanisms. Exam periods are often linked to increased stress and changes in daily routines, which may significantly affect digital consumption habits.
+Understanding how AI tools integrate into project workflows and exam preparation can provide deeper insights into productivity patterns, cognitive workload, and study habits. Both project work and exam periods typically involve fluctuating demands, requiring different levels of research, problem-solving, and revision at various stages.
 
-By analyzing YouTube watch history alongside exam schedules, this project aims to uncover behavioral patterns that could help students improve self-awareness, manage stress effectively, and balance time spent on productive and relaxing activities. The findings could also contribute to personalized study recommendations or behavioral models tailored to external conditions.
+This project aims to uncover whether ChatGPT serves as a critical support tool during these intensive academic periods. By analyzing usage trends, I hope to gain insights into how AI can be better leveraged for efficiency, idea generation, problem resolution, and study support. The findings could be useful for optimizing work and study strategies and identifying best practices for AI-assisted learning and productivity.
 
 # Data Sources
 
-**YouTube Watch History:**  
+**ChatGPT Interaction Logs:**  
 
-- Obtained via Google Takeout.
+- Extracted via OpenAI’s API usage data or local conversation logs.
 
-- Includes metadata such as video titles, watch timestamps, and durations.
+- Includes metadata such as timestamps, query content, and response lengths.
 
 **Exam Dates:**
 
 - Extracted from a Notion calendar using Notion API.
 
-- Provides structured data on exam schedules to correlate with Youtube viewing habits.
+- Provides structured data on exam dates to analyze study-related ChatGPT usage patterns.
+
+**Project Timelines:**
+
+- Extracted from Notion using the Notion API.
+
+- Provides structured data on project start and end dates to correlate with ChatGPT activity.
 
 # Objectives
 
-- Analyze temporal viewing patterns to determine how YouTube usage varies between exam and non-exam periods.
-- Examine the types of videos watched (e.g., educational, entertainment, motivational) during exam periods to identify shifts in content preferences.
-- Investigate whether students watch shorter or longer videos during stressful periods.
-- Perform sentiment analysis on video titles and descriptions to explore emotional patterns in content consumption.
-- Visualize findings through charts and dashboards to effectively communicate insights.
+- Analyze ChatGPT usage patterns before, during, and after both project work periods and exam periods to determine how AI-assisted research, brainstorming, and study evolve.
+- Examine the types of queries made during active project and exam phases to identify dominant themes and problem areas.
+- Investigate whether the frequency and complexity of questions increase as project deadlines and exams approach.
+- Perform temporal analysis to detect peaks and lulls in ChatGPT interactions corresponding to project milestones and exam schedules.
+- Visualize findings using interactive charts and dashboards to illustrate AI usage trends during different academic phases.
   
 ## Tools and Techniques
 
@@ -53,40 +58,34 @@ By analyzing YouTube watch history alongside exam schedules, this project aims t
 
     - `matplotlib` and `seaborn` for visualization
 
-    - `spotipy` for Spotify API integration
-
-    - `TextBlob` or `VADER` for sentiment analysis 
+    - `NLTK` or `spaCy` for text analysis and topic modeling
 
   **Data Source Integration:**
 
-    - Google Takeout for YouTube watch history
+    - OpenAI API for ChatGPT logs
 
-    - Notion API for exam schedules
+    - Notion API for project timelines and exam schedules
 
   **Version Control:**  GitHub for project documentation and code sharing
 
 # Expected Outcomes
 
-This analysis will provide insights into how YouTube viewing habits evolve during exam periods compared to regular periods. 
-Expected findings include:
+This analysis will provide a detailed perspective on how ChatGPT usage fluctuates throughout project work periods and exam periods. 
+I expect to uncover:
 
-- Variations in viewing intensity, such as increased or decreased activity during exams.
+- Variations in AI interaction intensity, such as increased usage during research-heavy phases, just before deadlines, and in the days leading up to exams.
+- Shifts in question complexity and focus areas, showing how AI supports different aspects of both project work and academic study.
+- Patterns in query types, such as a transition from broad ideation to specific problem-solving in project work and from conceptual understanding to direct question-solving in exam preparation.
 
-- Shifts in content preferences, like a higher consumption of educational videos for study purposes or entertainment videos for stress relief.
-
-- Differences in video duration preferences, potentially indicating shorter or longer content consumption based on stress levels.
-
-- Emotional tone shifts in video consumption, detected through sentiment analysis of video titles and descriptions.
-
-Visualizations will effectively communicate these insights, offering a data-driven perspective on how external factors like exams influence media consumption habits. The final deliverables will include interactive dashboards and a comprehensive report hosted on GitHub.
+The findings will be visualized in interactive dashboards, offering actionable insights into how AI can be optimally integrated into structured work and study periods. The final deliverables will include a comprehensive report and data visualizations hosted on GitHub, providing an analytical framework for improving AI-assisted productivity and study strategies.
 
 # Limitations and Future Work
 
-- The analysis relies on metadata from YouTube watch history, without access to full video content or transcripts.
+- The analysis relies on metadata and does not assess the quality or effectiveness of ChatGPT responses.
 
-- Sentiment analysis depends on video titles and descriptions, which may not always reflect the actual content of the videos.
+- Text analysis results depend on query structure and may not fully capture nuanced research and study behaviors.
 
-- Future work could incorporate physiological stress indicators (e.g., sleep patterns) to better correlate media consumption with stress levels.
+- Future work could expand the study to include additional productivity metrics, such as time tracking or task completion rates, to provide a more holistic view of AI's role in work and study efficiency.
 
-- Further studies could extend the analysis to other forms of digital consumption, such as reading habits or online course engagement.
+- Developing a predictive model to forecast ChatGPT usage patterns during upcoming projects and exams could enhance planning and workload management.
 
