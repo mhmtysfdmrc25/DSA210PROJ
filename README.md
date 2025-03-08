@@ -1,49 +1,48 @@
-# Analysis of Temporal Changes in Spotify Listening Habits During Exam Periods
+# Analysis of YouTube Viewing Habits During Exam Periods
 
 ## Project Overview
 
-This project examines how students' Spotify listening habits fluctuate during different periods, with a particular focus on stressful times such as exam periods. Music consumption is often influenced by external factors such as academic deadlines, workload intensity, and emotional state. By correlating students' Spotify listening history with exam dates sourced from a Notion calendar, this study aims to uncover how listening patterns and music preferences adapt during exam periods.
+This project examines how students' YouTube viewing habits change during exam periods. Media consumption often reflects external factors such as academic deadlines, stress levels, and daily routines. By correlating YouTube watch history with exam dates sourced from a Notion calendar, this study aims to uncover how students' viewing patterns and content preferences adapt during these times.
 
-Spotify has become an essential platform for students, serving as a source of relaxation, concentration, and motivation. During exam periods, students may exhibit distinct listening behaviors—turning to instrumental music for focus, calming tracks for stress relief, or upbeat music for motivation. This project seeks to answer key questions such as:
+YouTube plays a crucial role in both education and entertainment, serving as a source of relaxation and academic support. During exam periods, students may exhibit unique viewing behaviors—either consuming more educational content for study purposes or watching entertainment videos as a form of stress relief. This project seeks to answer key questions such as:
 
-- Does music listening time increase or decrease during exam periods?
-- What genres are most frequently listened to during exams compared to non-exam periods?
-- Do students tend to listen to songs with higher or lower BPM (beats per minute) during exam periods?
+- Does YouTube watch time increase or decrease during exam periods?
+- What types of videos are watched more frequently—educational, entertainment, or motivational content?
+- Do students tend to watch shorter or longer videos during stressful times?
+- Are there shifts in the emotional tone of the videos consumed?
 
-By integrating Spotify streaming history with structured exam date data from Notion, we aim to identify trends, correlations, and behavioral patterns. The findings could provide insights into the relationship between academic stress and music consumption, contributing to a broader understanding of how students use music as a coping mechanism during exams.
+By combining YouTube watch history with structured exam schedule data from Notion, this study aims to identify trends, patterns, and correlations in content consumption. The findings could provide insights into how stress and academic workload influence digital habits, potentially informing better time management strategies.
 
-The project will employ data science techniques such as exploratory data analysis (EDA), sentiment analysis of track lyrics and moods, and visualization of listening habits. The results will be presented in interactive dashboards, highlighting the differences in listening behaviors between exam and non-exam periods. Ultimately, this project aspires to reveal meaningful patterns in student behavior and contribute to the study of music consumption under stress.
+The project will employ data science techniques such as exploratory data analysis (EDA), sentiment analysis, and content categorization to process and visualize the data. Results will be presented in interactive charts and dashboards, highlighting the differences in viewing habits between exam and non-exam periods.
 
 # Motivation
 
-Understanding how external factors, such as exams, influence music consumption can provide deeper insights into emotional regulation, concentration strategies, and stress management techniques. Exam periods are often associated with increased cognitive load and altered daily routines, which can significantly impact listening habits.
+Understanding the impact of external factors, such as exams, on media consumption can provide insights into time management, emotional states, and stress-coping mechanisms. Exam periods are often linked to increased stress and changes in daily routines, which may significantly affect digital consumption habits.
 
-This project aims to uncover how students' music preferences and listening intensity change during such periods. By analyzing data from both Spotify and Notion, we seek to identify trends that can improve self-awareness, enhance study strategies, and optimize music recommendations for focus and relaxation. The insights could also be useful for designing personalized study playlists or stress-reducing interventions tailored to individual needs during high-pressure periods.
+By analyzing YouTube watch history alongside exam schedules, this project aims to uncover behavioral patterns that could help students improve self-awareness, manage stress effectively, and balance time spent on productive and relaxing activities. The findings could also contribute to personalized study recommendations or behavioral models tailored to external conditions.
 
 # Data Sources
 
-**Spotify Listening History:**  
+**YouTube Watch History:**  
 
-- Obtained via Spotify API.
+- Obtained via Google Takeout.
 
-- Includes metadata such as track titles, artists, genres, timestamps, and listening durations.
-
-- Requires OAuth authentication for user-specific streaming history.
+- Includes metadata such as video titles, watch timestamps, and durations.
 
 **Exam Dates:**
 
 - Extracted from a Notion calendar using Notion API.
 
-- Provides structured data on exam schedules to correlate with listening habits.
+- Provides structured data on exam schedules to correlate with Youtube viewing habits.
 
 # Objectives
 
-- Analyze temporal listening patterns to determine how exam and non-exam periods differ in terms of listening intensity and duration.
-- Examine genre preferences during exam periods compared to regular periods to identify shifts in music selection.
-- Perform sentiment analysis on song lyrics and metadata to explore emotional patterns in music choices during different periods.
-- Investigate the relationship between listening habits and stress-related periods, such as the tendency to listen to instrumental vs. vocal tracks or upbeat vs. slow-tempo music.
-- Visualize all findings through charts and dashboards to effectively communicate the insights gained from the analysis.
-
+- Analyze temporal viewing patterns to determine how YouTube usage varies between exam and non-exam periods.
+- Examine the types of videos watched (e.g., educational, entertainment, motivational) during exam periods to identify shifts in content preferences.
+- Investigate whether students watch shorter or longer videos during stressful periods.
+- Perform sentiment analysis on video titles and descriptions to explore emotional patterns in content consumption.
+- Visualize findings through charts and dashboards to effectively communicate insights.
+  
 ## Tools and Techniques
 
   **Programming:** Python (Google Colab)
@@ -56,11 +55,11 @@ This project aims to uncover how students' music preferences and listening inten
 
     - `spotipy` for Spotify API integration
 
-    - `TextBlob` or `VADER` for sentiment analysis of song lyrics
+    - `TextBlob` or `VADER` for sentiment analysis 
 
   **Data Source Integration:**
 
-    - Spotify API for streaming history
+    - Google Takeout for YouTube watch history
 
     - Notion API for exam schedules
 
@@ -68,24 +67,26 @@ This project aims to uncover how students' music preferences and listening inten
 
 # Expected Outcomes
 
-This analysis will provide a detailed perspective on how students' Spotify listening habits evolve during exam periods compared to regular periods. 
-We expect to uncover:
+This analysis will provide insights into how YouTube viewing habits evolve during exam periods compared to regular periods. 
+Expected findings include:
 
-- Variations in listening duration, such as increased or decreased music consumption during exams.
+- Variations in viewing intensity, such as increased or decreased activity during exams.
 
-- Shifts in genre preferences, such as a preference for instrumental, classical, or lo-fi beats for concentration.
+- Shifts in content preferences, like a higher consumption of educational videos for study purposes or entertainment videos for stress relief.
 
-- Emotional patterns in music consumption, highlighting changes in the mood (e.g., calming, energetic, melancholic) of tracks listened to during stressful periods.
+- Differences in video duration preferences, potentially indicating shorter or longer content consumption based on stress levels.
 
-Visualizations will clearly communicate these findings, offering actionable insights into how external factors like exams shape digital habits. The final deliverables will include a set of interactive dashboards and a comprehensive report hosted on GitHub, providing a robust analysis of the interplay between stress, time management, and music consumption.
+- Emotional tone shifts in video consumption, detected through sentiment analysis of video titles and descriptions.
+
+Visualizations will effectively communicate these insights, offering a data-driven perspective on how external factors like exams influence media consumption habits. The final deliverables will include interactive dashboards and a comprehensive report hosted on GitHub.
 
 # Limitations and Future Work
 
-- The analysis is limited to metadata and does not include insights from physiological responses to music or real-time stress levels.
+- The analysis relies on metadata from YouTube watch history, without access to full video content or transcripts.
 
-- Sentiment analysis of music relies on available metadata, lyrics, and pre-defined mood classifications, which may not always capture the full emotional impact of a song.
+- Sentiment analysis depends on video titles and descriptions, which may not always reflect the actual content of the videos.
 
-- Future work could expand the scope by incorporating biometric data (e.g., heart rate variability) to establish a stronger connection between music listening and stress levels. Additionally, integrating additional contextual data such as study duration or social interactions could provide a more comprehensive understanding of listening behaviors during exams.
+- Future work could incorporate physiological stress indicators (e.g., sleep patterns) to better correlate media consumption with stress levels.
 
-- A predictive model could be developed to forecast listening habits during upcoming exam periods and suggest personalized music recommendations based on past behaviors.
+- Further studies could extend the analysis to other forms of digital consumption, such as reading habits or online course engagement.
 
