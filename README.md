@@ -1,52 +1,58 @@
-# Analysis of ChatGPT Usage During Project Work and Exam Periods
+# Analysis of Argues with my Girlfriend on Exam Periods
 
 ## Project Overview
 
-This project aims to analyze how my ChatGPT usage fluctuates during both project work periods and exam periods by correlating interaction data with timelines extracted from my Notion workspace. Effective project management and exam preparation often involve extensive research, brainstorming, and problem-solving, which can lead to increased reliance on AI tools like ChatGPT. By examining my ChatGPT usage before, during, and after these critical periods, this study seeks to uncover patterns in AI-assisted productivity and study habits.
+This project explores the argues with my gf in relation to external stressors, particularly on academic exam periods. Emotional dynamics in relationships can be influenced by various external factors, including workload, stress, lack of seeing each other and time constraints. By collecting and analyzing conflict-related data alongside exam schedules, this study aims to uncover trends and potential correlations between academic stress and relationship disagreements.
 
-ChatGPT serves as a powerful tool for ideation, content creation, technical problem-solving, and exam revision. However, its usage may vary depending on project complexity, exam difficulty, deadlines, and personal work habits. This project will investigate key questions such as:
+Long-term relationships often experience recurring periods of tension, and external stressors can act as triggers for conflicts. By recording conflict instances, causes, and durations, and integrating structured data from an academic calendar, this project seeks to answer key questions such as:
 
-- Does my ChatGPT usage increase during active project work periods?
-- What types of questions or topics dominate my interactions with ChatGPT during project phases?
-- Does my ChatGPT usage increase during exam periods?
+- Does the frequency of conflicts increase during exam periods?
+- What are the primary triggers of conflicts, and do they vary between normal periods and exam weeks?
+- How long do conflicts last, and is there a pattern in their resolution process?
 
-By integrating ChatGPT interaction logs with structured project timelines and exam schedules from Notion, I aim to identify trends in how AI usage supports both academic and project workflows. The findings could provide valuable insights into AI-driven productivity patterns and highlight how external academic demands shape digital tool utilization.
-
-The project will employ data science techniques such as exploratory data analysis (EDA), topic modeling, and temporal analysis to uncover trends and correlations. Results will be presented in interactive visualizations to illustrate usage fluctuations across different project and exam phases. Ultimately, this study seeks to enhance our understanding of AI-assisted study and work strategies, optimizing ChatGPT usage for more efficient learning and productivity.
+By combining self-recorded relationship conflict data with structured exam schedule data, this project aims to identify behavioral patterns and stress-related triggers. The results could provide insights into stress management, relationship communication strategies, and emotional resilience during high-pressure periods.
 
 # Motivation
 
-Understanding how AI tools integrate into project workflows and exam preparation can provide deeper insights into productivity patterns, cognitive workload, and study habits. Both project work and exam periods typically involve fluctuating demands, requiring different levels of research, problem-solving, and revision at various stages.
+Understanding how external factors, such as academic stress, impact personal relationships can offer valuable insights into emotional regulation and communication. Exam periods are known for increased anxiety and time constraints, which may influence interpersonal interactions and conflict likelihood.
 
-This project aims to uncover whether ChatGPT serves as a critical support tool during these intensive academic periods. By analyzing usage trends, I hope to gain insights into how AI can be better leveraged for efficiency, idea generation, problem resolution, and study support. The findings could be useful for optimizing work and study strategies and identifying best practices for AI-assisted learning and productivity.
+This project seeks to explore the extent to which external stressors affect relationship dynamics and whether certain trends can be identified. The findings could help in developing strategies for fight management and stress reduction in both romantic and interpersonal relationships.
 
 # Data Sources
 
-**ChatGPT Interaction Logs:**  
+**Manually Recorded Conflict Data:**  
 
-- Extracted via OpenAI’s API usage data or local conversation logs.
+- A self-maintained Excel sheet including (planning to gather by past and future WhatsApp conversations):
 
-- Includes metadata such as timestamps, query content, and response lengths.
+  - Date of the fight
 
+  - Cause of the fight
+
+  - Fight occurrence (1 = Yes, 0 = No)
+
+  - Duration of the conflict (in days)
+
+  - Solution status and method (1 = Solved, 0 = Unsolved, how it's solved if 1)
+  
 **Exam Dates:**
 
 - Extracted from a Notion calendar using Notion API.
 
-- Provides structured data on exam dates to analyze study-related ChatGPT usage patterns.
+- Provides structured data on academic schedules for correlation analysis.
 
-**Project Timelines:**
+**WhatsApp Sentiment Data (Optional):**
 
-- Extracted from Notion using the Notion API.
+- Message frequency and sentiment analysis to evaluate emotional tone.
 
-- Provides structured data on project start and end dates to correlate with ChatGPT activity.
+- Categorization into positive, neutral, and negative messages for trend analysis.
 
 # Objectives
 
-- Analyze ChatGPT usage patterns before, during, and after both project work periods and exam periods to determine how AI-assisted research, brainstorming, and study evolve.
-- Examine the types of queries made during active project and exam phases to identify dominant themes and problem areas.
-- Investigate whether the frequency and complexity of questions increase as project deadlines and exams approach.
-- Perform temporal analysis to detect peaks and lulls in ChatGPT interactions corresponding to project milestones and exam schedules.
-- Visualize findings using interactive charts and dashboards to illustrate AI usage trends during different academic phases.
+- Analyze conflict frequency to determine if there is a significant increase during exam periods.
+- Identify conflict triggers and assess if their nature changes during high-stress periods.
+- Examine conflict resolution patterns to understand whether exam stress affects resolution time.
+- Perform sentiment analysis on WhatsApp messages to identify emotional shifts leading to conflicts.
+- Visualize findings through charts and dashboards to effectively communicate trends and patterns.
   
 ## Tools and Techniques
 
@@ -58,34 +64,38 @@ This project aims to uncover whether ChatGPT serves as a critical support tool d
 
     - `matplotlib` and `seaborn` for visualization
 
-    - `NLTK` or `spaCy` for text analysis and topic modeling
+    - `scipy.stats` for correlation analysis
+
+    - `Vader` (or `TextBlob`) for sentiment analysis
 
   **Data Source Integration:**
 
-    - OpenAI API for ChatGPT logs
+    - Notion API for exam schedules
 
-    - Notion API for project timelines and exam schedules
+    - Manual data entry for conflict tracking on excel sheet
 
   **Version Control:**  GitHub for project documentation and code sharing
 
 # Expected Outcomes
 
-This analysis will provide a detailed perspective on how ChatGPT usage fluctuates throughout project work periods and exam periods. 
-I expect to uncover:
+This project will provide a quantitative analysis of how relationship conflicts fluctuate in response to external stressors like exams. 
+Expected findings include:
 
-- Variations in AI interaction intensity, such as increased usage during research-heavy phases, just before deadlines, and in the days leading up to exams.
-- Shifts in question complexity and focus areas, showing how AI supports different aspects of both project work and academic study.
-- Patterns in query types, such as a transition from broad ideation to specific problem-solving in project work and from conceptual understanding to direct question-solving in exam preparation.
+- Variations in conflict frequency between exam and non-exam periods.
+- Identification of common triggers leading to disputes.
+- Insights into conflict duration and resolution trends over time.
+- Emotional patterns in WhatsApp conversations before and during conflicts.
 
-The findings will be visualized in interactive dashboards, offering actionable insights into how AI can be optimally integrated into structured work and study periods. The final deliverables will include a comprehensive report and data visualizations hosted on GitHub, providing an analytical framework for improving AI-assisted productivity and study strategies.
+Results will be visualized in interactive dashboards, offering a comprehensive view of stress-related relationship dynamics. The final deliverables will include data-driven insights hosted on GitHub, potentially leading to strategies for better emotional regulation during high-stress periods.
 
 # Limitations and Future Work
 
-- The analysis relies on metadata and does not assess the quality or effectiveness of ChatGPT responses.
+- The analysis is based on self-reported data, which may introduce bias.
 
-- Text analysis results depend on query structure and may not fully capture nuanced research and study behaviors.
+- WhatsApp sentiment analysis relies on text messages and may not fully capture the emotional depth of conflicts.
 
-- Future work could expand the study to include additional productivity metrics, such as time tracking or task completion rates, to provide a more holistic view of AI's role in work and study efficiency.
+- Future work could integrate physiological data, such as heart rate variability, to assess emotional stress levels.
 
-- Developing a predictive model to forecast ChatGPT usage patterns during upcoming projects and exams could enhance planning and workload management.
+- A predictive model could be developed to anticipate potential conflicts based on stress indicators, allowing for proactive resolution strategies.
+
 
