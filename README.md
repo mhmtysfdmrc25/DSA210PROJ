@@ -1,58 +1,54 @@
-# Analysis of Argues with my Girlfriend on Exam Periods
+# Analysis of Daily Water Consumption, Rainfall Amount, and Dams Levels in Istanbul
 
 ## Project Overview
 
-This project explores the argues with my gf in relation to external stressors, particularly on academic exam periods. Emotional dynamics in relationships can be influenced by various external factors, including workload, stress, lack of seeing each other and time constraints. By collecting and analyzing conflict-related data alongside exam schedules, this study aims to uncover trends and potential correlations between academic stress and relationship disagreements.
+This project investigates the relationship between daily water consumption, rainfall levels across 10 dams, and dams' fill percentages in Istanbul over the period from 2011 to 2024. By analyzing historical data sourced from IBB Open Data Portal, this study aims to identify correlations and trends that influence water resource management.
 
-Long-term relationships often experience recurring periods of tension, and external stressors can act as triggers for conflicts. By recording conflict instances, causes, and durations, and integrating structured data from an academic calendar, this project seeks to answer key questions such as:
+Water consumption and reservoir levels are crucial indicators of urban sustainability, particularly in a metropolis like Istanbul, where millions depend on a stable water supply. Rainfall is a key replenishment factor, while consumption directly affects the depletion rate of water reserves. Understanding these interconnections can help forecast future reservoir levels and assist in strategic water management decisions.
 
-- Does the frequency of conflicts increase during exam periods?
-- What are the primary triggers of conflicts, and do they vary between normal periods and exam weeks?
-- How long do conflicts last, and is there a pattern in their resolution process?
+The key research questions addressed in this project include:
+- How strongly is water consumption correlated with rainfall amount and reservoir fill percentages?
+- Are there seasonal patterns or anomalies in water consumption trends?
+- Can machine learning models predict future reservoir levels based on historical data?
 
-By combining self-recorded relationship conflict data with structured exam schedule data, this project aims to identify behavioral patterns and stress-related triggers. The results could provide insights into stress management, relationship communication strategies, and emotional resilience during high-pressure periods.
+Using data science techniques, this project will analyze and visualize temporal patterns in water usage, precipitation, and reservoir storage. Additionally, machine learning algorithms will be employed to develop predictive models for future reservoir capacity based on historical consumption and weather trends.
 
 # Motivation
 
-Understanding how external factors, such as academic stress, impact personal relationships can offer valuable insights into emotional regulation and communication. Exam periods are known for increased anxiety and time constraints, which may influence interpersonal interactions and conflict likelihood.
+Water shortage is a growing concern for cities worldwide, and Istanbul is no exception. By understanding the interplay between rainfall, consumption, and reservoir storage, authorities can better anticipate periods of water shortage and optimize resource allocation.
 
-This project seeks to explore the extent to which external stressors affect relationship dynamics and whether certain trends can be identified. The findings could help in developing strategies for fight management and stress reduction in both romantic and interpersonal relationships.
+This project aims to provide actionable insights into:
+
+- Identifying key drivers of water depletion and replenishment
+- Informing policy decisions on water conservation
+- Improving prediction models for future water supply sustainability
+
+By leveraging open data from the IBB Open Data Portal, this analysis contributes to a data-driven approach to urban water management.
 
 # Data Sources
 
-**Manually Recorded Conflict Data:**  
+**Daily Water Consumption Data:**  
 
-- A self-maintained Excel sheet including (planning to gather by past and future WhatsApp conversations):
-
-  - Date of the fight
-
-  - Cause of the fight
-
-  - Fight occurrence (1 = Yes, 0 = No)
-
-  - Duration of the conflict (in days)
-
-  - Solution status and method (1 = Solved, 0 = Unsolved, how it's solved if 1)
+- Collected from the IBB Open Data Portal.
+- Provides daily total water consumption in cubic meters (m³/day) for Istanbul.
   
-**Exam Dates:**
+**Daily Rainfall Amount Data for each 10 Dams in Istanbul:**
 
-- Extracted from a Notion calendar using Notion API.
+- Obtained from the IBB Open Data Portal.
+- Records daily precipitation (kg/m³) for each of the 10 major dams supplying water to Istanbul.
 
-- Provides structured data on academic schedules for correlation analysis.
+**Daily Reservoir Fill Percentage Data:**
 
-**WhatsApp Sentiment Data (Optional):**
-
-- Message frequency and sentiment analysis to evaluate emotional tone.
-
-- Categorization into positive, neutral, and negative messages for trend analysis.
+- Extracted from the IBB Open Data Portal.
+- Contains the daily percentage of storage capacity occupied in each reservoir.
 
 # Objectives
 
-- Analyze conflict frequency to determine if there is a significant increase during exam periods.
-- Identify conflict triggers and assess if their nature changes during high-stress periods.
-- Examine conflict resolution patterns to understand whether exam stress affects resolution time.
-- Perform sentiment analysis on WhatsApp messages to identify emotional shifts leading to conflicts.
-- Visualize findings through charts and dashboards to effectively communicate trends and patterns.
+- Conduct a correlation analysis to determine how rainfall and water consumption influence reservoir levels.
+- Identify seasonal trends and anomalies in water consumption and storage levels.
+- Develop a predictive machine learning model to forecast future reservoir levels based on past consumption and precipitation trends.
+- Visualize the findings through interactive charts and dashboards to communicate insights effectively.
+- Provide actionable recommendations for optimizing water resource management.
   
 ## Tools and Techniques
 
@@ -61,41 +57,40 @@ This project seeks to explore the extent to which external stressors affect rela
   **Libraries:**
 
     - `pandas` for data processing
-
     - `matplotlib` and `seaborn` for visualization
-
     - `scipy.stats` for correlation analysis
+    - `scikit-learn` for machine learning models
+    - `statsmodels` for time series analysis
+    
+  **Machine Learning Approaches:**
 
-    - `Vader` (or `TextBlob`) for sentiment analysis
+    - Linear Regression for correlation analysis
+    - Random Forest and XGBoost for predictive modeling
+    - ARIMA and LSTM for time series forecasting
 
-  **Data Source Integration:**
+  **Data Integration:**
 
-    - Notion API for exam schedules
-
-    - Manual data entry for conflict tracking on excel sheet
+    - Merging multiple datasets based on timestamp fields
+    - Handling missing values and outliers
 
   **Version Control:**  GitHub for project documentation and code sharing
 
 # Expected Outcomes
 
-This project will provide a quantitative analysis of how relationship conflicts fluctuate in response to external stressors like exams. 
-Expected findings include:
+This project aims to deliver:
 
-- Variations in conflict frequency between exam and non-exam periods.
-- Identification of common triggers leading to disputes.
-- Insights into conflict duration and resolution trends over time.
-- Emotional patterns in WhatsApp conversations before and during conflicts.
-
-Results will be visualized in interactive dashboards, offering a comprehensive view of stress-related relationship dynamics. The final deliverables will include data-driven insights hosted on GitHub, potentially leading to strategies for better emotional regulation during high-stress periods.
+- A comprehensive analysis of how rainfall, water consumption, and reservoir levels are interconnected.
+- Identification of seasonal variations in water consumption patterns.
+- A predictive model capable of estimating future reservoir levels based on historical trends.
+- Visual dashboards illustrating key findings to aid in decision-making for water management.
+- Insights that could contribute to improving water sustainability policies in Istanbul.
 
 # Limitations and Future Work
 
-- The analysis is based on self-reported data, which may introduce bias.
+- The accuracy of predictions depends on the quality and completeness of historical data.
+- External factors such as population growth, infrastructure changes, and climate variability are not explicitly accounted for in the model.
+- Future research could incorporate climate change projections and urban expansion trends to refine predictive accuracy.
+- Developing an early warning system for potential water shortages could be an extension of this project.
 
-- WhatsApp sentiment analysis relies on text messages and may not fully capture the emotional depth of conflicts.
-
-- Future work could integrate physiological data, such as heart rate variability, to assess emotional stress levels.
-
-- A predictive model could be developed to anticipate potential conflicts based on stress indicators, allowing for proactive resolution strategies.
-
+By leveraging open data and machine learning, this project contributes to a data-driven approach to water resource management, ensuring sustainable usage and long-term planning for Istanbul’s water supply.
 
