@@ -57,10 +57,11 @@ By leveraging open data from the IBB Open Data Portal, this analysis contributes
   **Libraries:**
 
     - `pandas` for data processing
-    - `matplotlib` and `seaborn` for visualization
+    - `matplotlib.pyplot` and `seaborn` for visualization
     - `scipy.stats` for correlation analysis
     - `scikit-learn` for machine learning models
-    - `statsmodels` for time series analysis
+    - `seaborn` for data visualization
+    - `google.colab` for data gathering from google drive
     
   **Machine Learning Approaches:**
 
